@@ -1,0 +1,18 @@
+input{
+    margin-left: 10px;
+}
+#show_result{
+    margin-left: 220px;
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+    padding: 10px;
+    display: table-cell;
+    border: 1px solid black;
+    color: rgb(255,255,255);
+}
+.row{
+    padding: 10px 20px 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}

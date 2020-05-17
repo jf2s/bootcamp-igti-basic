@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Colors</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>RGB Calculator</h1>
+    <div class="container-row">
+        <div class="row">
+            <span>Red (R)</span>
+            <input type="range" id="range_red" name="range_red" min="0" max="255" title="Color Red" onchange="setColorByElement('r',this);" >
+            <input type="text" id="input_red" disabled="disabled" name="text_red">
+        </div>
+        <div class="row">
+            <span>Green (G)</span>
+            <input type="range" id="range_green" name="range_green" min="0" max="255" title="Color Green" onchange="setColorByElement('g',this);" >
+            <input type="text" id="input_green" disabled="disabled" name="text_green">
+        </div>
+        <div class="row">
+            <span>Blue (B)</span>
+            <input type="range" id="range_blue" name="range_blue" min="0" max="255" title="Color Blue" onchange="setColorByElement('b',this);">
+            <input type="text" id="input_blue" disabled="disabled" name="text_blue">
+        </div>
+    </div>
+    <div id="show_result"></div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
